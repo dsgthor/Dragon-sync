@@ -1,0 +1,92 @@
+# dragon-sync - Distributed Threat Intelligence Sync Tool
+# Production Requirements
+
+# ========================================
+# CORE DEPENDENCIES
+# ========================================
+
+# Cryptographic operations for RSA encryption, digital signatures
+cryptography>=41.0.0
+
+# HTTP requests for API integrations and network communication
+requests>=2.31.0
+
+# Advanced HTTP features and session management
+urllib3>=2.0.0
+
+# Date/time parsing and manipulation
+python-dateutil>=2.8.0
+
+# ========================================
+# GUI FRAMEWORK
+# ========================================
+
+# Note: tkinter is included with Python standard library
+# If running on minimal Python installations, you may need:
+# - Ubuntu/Debian: sudo apt-get install python3-tk
+# - CentOS/RHEL: sudo yum install tkinter
+# - macOS: included with Python from python.org
+
+# ========================================
+# DATABASE & STORAGE
+# ========================================
+
+# SQLite is included with Python standard library
+# For enhanced SQLite features (optional):
+# sqlite3-extensions>=0.1.0
+
+# ========================================
+# NETWORK & COMMUNICATION
+# ========================================
+
+# JSON Web Tokens for secure authentication (future enhancement)
+# PyJWT>=2.8.0
+
+# ========================================
+# DATA PROCESSING & ANALYSIS
+# ========================================
+
+# UUID generation (included in Python stdlib, but explicit for clarity)
+# uuid is built-in
+
+# ========================================
+# THREAT INTELLIGENCE APIS (OPTIONAL)
+# Install these only if you plan to use the corresponding APIs
+# ========================================
+
+# For VirusTotal API integration
+# pip install virustotal-python>=1.0.0
+
+# For Shodan API integration  
+# pip install shodan>=1.30.0
+
+# For AbuseIPDB API integration
+# pip install requests-toolbelt>=1.0.0
+
+# For WHOIS lookups
+# pip install python-whois>=0.8.0
+
+# ========================================
+# VALIDATION & SECURITY (OPTIONAL)
+# ========================================
+
+# IP address validation and manipulation
+# ipaddress is built-in Python 3.3+
+
+# URL validation and parsing
+# pip install validators>=0.22.0
+
+# Email validation
+# pip install email-validator>=2.0.0
+
+# ========================================
+# LOGGING & MONITORING (OPTIONAL)
+# ========================================
+
+# Enhanced logging capabilities (Python logging is built-in)
+# pip install structlog>=23.1.0
+
+# ========================================
+# DEVELOPMENT DEPENDENCIES
+# For development, install: pip install -r requirements-dev.txt
+# ========================================
